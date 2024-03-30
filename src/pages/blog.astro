@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro"
+import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 
 const pageTitle = "My Astro Learning Blog"
@@ -13,6 +13,10 @@ const pageTitle = "My Astro Learning Blog"
             type="image/svg+xml"
             href="/favicon.svg"
         />
+        <link
+            rel="stylesheet"
+            href="../../src/styles/globals.css"
+        />
         <meta
             name="viewport"
             content="width=device-width"
@@ -24,7 +28,7 @@ const pageTitle = "My Astro Learning Blog"
         <title>Astro</title>
     </head>
     <body>
-        <Navigation />
+        <Header />
         <h1>My Astro Learning Blog</h1>
         <p>This is where I will post about my journey learning Astro.</p>
         <ul>
@@ -35,5 +39,8 @@ const pageTitle = "My Astro Learning Blog"
             <li><a href="/posts/post-3/">Post 3</a></li>
         </ul>
         <Footer />
+        <script>
+            import "../scripts/menu.js"
+        </script>
     </body>
 </html>
